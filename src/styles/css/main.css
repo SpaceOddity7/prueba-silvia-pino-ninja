@@ -54,6 +54,14 @@ body {
     transition: filter 0.3s; 
 }
 
+@media screen and (max-width: 767px) {
+    .card img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 .card img:hover {
     filter: none; 
     }
