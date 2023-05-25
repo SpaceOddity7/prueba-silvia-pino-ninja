@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #161211;
+    padding-top: 75px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 69px;
+    }
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    }
+
+    .card > div {
+        width: 50%; 
+    }
+
+    @media screen and (max-width: 767px) {
+        .card > div { 
+            width: 100%; 
+    }
+
+    .card {
+        margin-left: 2%;
+        margin-right: 2%; 
+    }
+}
+.card img {
+    float: left;
+    margin-right: 15px;
+    margin-left: 5px;
+    width: 180px;
+    height: 180px;
+    filter: grayscale(100%); 
+    transition: filter 0.3s; 
+}
+
+.card img:hover {
+    filter: none; 
+    }
+
+.card-body {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin:20px;
+    margin-inline-start: 1%;
+    box-shadow: 0 8px 32px 0 rgba(8, 7, 8, 0.37);
+}
+
+.card-title {
+    font-family: 'Prata';
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.card p {
+    text-align: left;
+    font-size: 14px;
+    font-weight:normal;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+}

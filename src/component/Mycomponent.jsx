@@ -1,3 +1,4 @@
+import './../styles/css/main.css';
 import React, { useEffect, useState } from 'react';
 
 function MyComponent() {
@@ -11,10 +12,10 @@ function MyComponent() {
     }, []);
 
     return (
-        <div>
+        <div className="card">
             {users.map((user, index) => (
-                <div key={index}>
-                    <h2>{`${user.name.title} ${user.name.first} ${user.name.last}`}</h2>
+                <div className="card-body" key={index}>
+                    <h2 className="card-title">{`${user.name.title} ${user.name.first} ${user.name.last}`}</h2>
                     <img src={user.picture.large} alt="Profile" />
                     <p>Email: {user.email}</p>
                     <p>Username: {user.login.username}</p>
